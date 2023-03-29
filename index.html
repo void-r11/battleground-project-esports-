@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" ,content="IE=edge" , />
+    <meta name="viewport" , content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css\universal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/4b9b1b2686.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <title>Champions.gg</title>
+  </head>
+  <body>
+    <div class="root">
+      <section id="home" class="main">
+        <video
+          class="videobg"
+          src="assets\bg720p.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+        <nav class="menu-container">
+          <!-- burger menu -->
+          <input type="checkbox" aria-label="Toggle menu" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <!-- logo -->
+          <a href="#" class="menu-logo">
+            <img src="assets\main.png" alt="My Awesome Website" />
+          </a>
+
+          <!-- menu items -->
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="#home" onclick="bleep.play()"> About Us </a>
+              </li>
+              <li>
+                <a href="#pricing" onclick="bleep.play()"> Standings </a>
+              </li>
+              <li>
+                <a href="#blog" onclick="bleep.play()"> Schedule </a>
+              </li>
+              <li>
+                <a href="#docs" onclick="bleep.play()"> Rulebook </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#signup"
+                  ><button id="register" onclick="bleep.play()">
+                    <div id="translate"></div>
+                    Register now
+                  </button></a
+                >
+              </li>
+              <li>
+                <a href="#login"
+                  ><button id="price" onclick="bleep.play()">Info/faQ</button></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="hero_section">
+          <div class="heading">
+            <h1 id="heading_main">
+              The Battleground <span id="red_h1">Survivor Series</span>
+            </h1>
+          </div>
+
+          <h3 id="hero-i">
+            <span id="red_text"
+              >Organised by students of amity university patna</span
+            ><br />
+            Introducing the ultimate test of skill and endurance in the world of
+            esports -<br />
+            <span id="red_text"> the Battleground Survivor Series! </span>Step
+            onto the battlefield and <br />
+            prove that you have what it takes to outlast the competition <br />
+            and emerge as the <span id="red_text">last survivor.</span> <br />
+          </h3>
+          <a href="form.html"
+            ><button id="get" onmouseover="change()" onmouseleave="rever()">
+              !! Register Now !!
+            </button></a
+          >
+        </div>
+        <div class="music">
+          <button id="play" onclick="feel()">
+            <img
+              src="assets\sound_on.png"
+              alt=""
+              height="60px"
+              style="padding: 16px 11px 10px 10px"
+            />
+          </button>
+          <button id="pause" onclick="nofeel()">
+            <img
+              src="assets\sound_off.png"
+              alt=""
+              height="60px"
+              style="padding: 16px 11px 10px 10px"
+            />
+          </button>
+        </div>
+      </section>
+      <section id="about" class="about_us">
+        <div class="side_head"><h1 id="sideh1">About us</h1></div>
+        <div class="about">
+          <p id="a_paragraph">
+            Introducing the ultimate test of skill and endurance in the world of
+            esports - the Battleground Survivor Series! With a name that evokes
+            images of intense battles and epic showdowns, this series is one
+            that any serious gamer will want to be a part of. Step onto the
+            battlefield and prove that you have what it takes to outlast the
+            competition and emerge as the last survivor. In this series, players
+            will be pushed to their limits as they fight for survival in the
+            most intense and heart-pumping battles yet. With each match, the
+            stakes are higher, and the competition more fierce. But it's not
+            just about winning - it's about the experience. The Battleground
+            Survivor Series is an opportunity to connect with other gamers, to
+            form teams and build friendships that will last a lifetime. It's a
+            chance to experience the thrill of competition and to push yourself
+            to new heights. So if you're ready for the challenge of a lifetime,
+            if you're ready to prove yourself as one of the elite gamers in the
+            world, then the Battleground Survivor Series is for you. Sign up now
+            and get ready to join the battle for survival! the Battleground
+            Survivor Series promises to deliver non-stop action and
+            adrenaline-fueled excitement. From the opening bell to the final
+            showdown, this is the series that will keep you on the edge of your
+            seat and leave you breathless. Are you ready to join the ranks of
+            the elite and become the ultimate survivor? Sign up now and get
+            ready to dominate the battleground like never before!
+          </p>
+        </div>
+      </section>
+      <section id="ranking" class="standing">
+        <div class="ranks">
+          <table class="table">
+            <thead>
+            <tr>
+            <th>Sr no.</th>
+            <th>Name</th>
+            <th>Id</th>
+            <th>Matches</th>
+            <th>Kd</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            </tr>
+            <tr class="d_shade">
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            </tr>
+            <tr>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            </tr>
+            <tr class="d_shade">
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            </tr>
+            <tr>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            </tr>
+            <tr class="d_shade">
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            </tr>
+            <tr>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            </tr>
+            <tr class="d_shade">
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            </tr>
+            <tr>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            </tr>
+            <tr class="d_shade">
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            </tr>
+            <tr>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            </tr>
+            <tr class="d_shade">
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            <td>na</td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="r_head">
+          <h1 id="rankh1">
+            Rankings
+          </h1>
+        </div>
+      </section>
+      <section class="end">
+        <div class="socials">
+          <div class="icons">
+            <div id="insta">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div id="fb">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div id="yt">
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div id="discord">
+              <a href=""><i class="fa-brands fa-discord"></i></a>
+            </div>
+            <div id="whatsapp">
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div id="telegram">
+              <a href=""><i class="fa-brands fa-telegram"></i></a>
+            </div>
+          </div>
+
+        </div>
+  
+        <footer class="footer-distributed footer">
+
+          <div class="footer-left">
+    
+            <a href="#" class="footer-logo">
+              <img src="assets\main.png" alt="My Awesome Website" height="40px" />
+            </a>
+    
+            <p class="footer-links">
+              <a href="#">Home</a> ·
+              <a href="#">About</a> ·
+              <a href="#">info</a> ·
+              <a href="#">About</a> ·
+              <a href="#">Faq</a> ·
+              <a href="#">Contact</a>
+            </p>
+    
+            <p class="footer-company-name">survivor series &copy; 2023</p>
+          </div>
+    
+          <div class="footer-center">
+    
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>Somewhere in patna</span> Bihar , INDIAN</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>pta nahi</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:support@company.com">survivor@bgmi.com</a></p>
+            </div>
+    
+          </div>
+    
+          <div class="footer-right">
+    
+            <p class="footer-company-about">
+              <span>About this guy</span> Blah Blah..Blah blah bl;ah blah
+            </p>
+    
+    
+    
+          </div>
+    
+        </footer>
+    
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="scripts\index.js"></script>
+    <script>
+        function nows() {
+
+          Swal.fire({
+  title: 'Work in Progress[beta]',
+  showClass: {
+    popup: 'animate__animated animate__fadeInDown'
+  },
+  hideClass: {
+    popup: 'animate__animated animate__fadeOutUp'
+  }
+})
+       ;
+      }
+      window.onload = function() {
+        nows();
+      };
+    </script>
+  </body>
+</html>
