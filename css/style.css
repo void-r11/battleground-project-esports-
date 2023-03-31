@@ -1,10 +1,31 @@
+
 .main {
-  min-height: 100vh;
+height: 100vh;
   width: 100%;
   background-color: #0000008e;
 }
+.mobile{
+  display: none;
+}
 /** #0000008e **/
-
+.back_to_top{
+  position: absolute;
+  z-index: 199;
+  height: 32px;
+  width: 32px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color:#e50e1d;
+  color: #000;
+  top: 90%;
+  left: 2%;
+  display: flex;
+  font-size: 20px;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  animation: animate-pulse 3s linear infinite;
+}
 .menu-container {
   position: relative;
   display: flex;
@@ -69,7 +90,7 @@
 }
 .menu {
   align-items: center;
-  gap: 87px;
+
 }
 .menu li a {
   font-size: 16px;
@@ -148,43 +169,6 @@
   color: #e50e1d;
 }
 /* mobile styles */
-@media only screen and (max-width: 899px) {
-  .menu-container {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .menu-logo {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .menu-logo img {
-    max-height: 30px;
-  }
-
-  .menu {
-    position: absolute;
-    box-sizing: border-box;
-    width: 300px;
-    right: -300px;
-    top: 0;
-    margin: -20px;
-    padding: 75px 50px 50px;
-    background: #ffffff;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    transform-origin: 0% 0%;
-    transform: translateX(0%);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  }
-
-  .menu-container input:checked ~ .menu {
-    transform: translateX(-100%);
-  }
-}
 
 /* desktop styles */
 @media only screen and (min-width: 900px) {
@@ -248,7 +232,7 @@
 #hero-i {
   font-size: 18px;
   padding-bottom: 1.5%;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
 }
 .hero_section h1 {
@@ -277,16 +261,9 @@
 #red_text {
   color: #e50e1d;
   text-transform: uppercase;
-  animation: textrule 1s infinite ease-in-out;
+
 }
-@keyframes textrule {
-  0% {
-    text-shadow: 0px 0px 0px #e50e1d;
-  }
-  100% {
-    text-shadow: 0px 0px 20px #e50e1d;
-  }
-}
+
 #get {
   padding: 16px 56px;
   border: 1px solid #e50e1d;
@@ -304,9 +281,20 @@
 }
 .music {
   position: absolute;
-  top: 45em;
+  top: 44em;
   right: 67px;
 }
+/* Firefox */
+@-moz-document url-prefix() {
+  /* Styles specific to Firefox */
+  .menu_container{
+    gap: 22em;
+  }
+  .music{
+    top: 41em;
+  }
+}
+
 #play {
   position: absolute;
   z-index: 24;
@@ -323,9 +311,7 @@
   cursor: pointer;
 }
 #about {
-  height: 100vh;
-  max-height: 100vh;
-  width: 100%;
+
   display: flex;
   border-top: 1px solid #3a3a3a;
 }
@@ -344,12 +330,10 @@
   width: 214%;
   color: rgb(15, 15, 15);
 }
-.side_head:hover #sideh1 {
-  color: rgb(255, 255, 255);
-}
+
 .about {
   height: 100vh;
-  width: 84%;
+
   background: rgb(15, 15, 15);
 }
 #a_paragraph {
@@ -359,7 +343,7 @@
 }
 #ranking {
   height: 100vh;
-  width: 100%;
+
   background-color: #666666;
   display: flex;
   border-top: 1px solid #3a3a3a;
@@ -367,7 +351,7 @@
 }
 
 .ranks {
-  height: 100%;
+
   width: 84%;
   background-color: rgb(0, 0, 0);
   display: flex;
@@ -391,7 +375,7 @@
 }
 .table thead {
   color: white;
-  background: black;
+  background:#2a2a2a;
 }
 .d_shade {
   background-color: #2a2a2a;
@@ -416,8 +400,8 @@ table.table tfoot td {
 }
 .end {
   height: 80vh;
-  max-height: 100vh;
-  width: 100%;
+
+
   display: flex;
   flex-direction: column;
 }
@@ -434,11 +418,39 @@ table.table tfoot td {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 84%;
+  width: 100%;
 }
 
+.fa-brands{
+  font-size: 6em;
+}
 .socials a {
   color: #e50e1d;
+}
+
+.icons a button {
+  height: 9em;
+    width: 9em;
+    border-radius: 69%;
+    animation: animate-pulse 3s linear infinite;
+  cursor: pointer;
+  background-color: #e50e1d;
+}
+
+@keyframes animate-pulse{
+  0%{
+      box-shadow: 0 0 0 0 rgba(255,109,74,0.7),  0 0 0 0 rgba(255,109,74,0.7);
+  }
+  40%{
+      box-shadow: 0 0 0 50px rgba(255,109,74,0.0),  0 0 0 0 rgba(255,109,74,0.7);
+  }
+  80%{
+      box-shadow: 0 0 0 50px rgba(255,109,74,0.0),  0 0 0 30px rgba(255,109,74,0);
+  }
+  100%{
+      box-shadow: 0 0 0 0 rgba(255,109,74,0.0),  0 0 0 30px rgba(255,109,74,0);
+  }
+  
 }
 .footer {
   height: 60%;
@@ -448,6 +460,7 @@ table.table tfoot td {
   flex-direction: row;
   border-top: 1px solid #3a3a3a;
   justify-content: space-between;
+  align-items: center;
 }
 footer {
   color: rgb(255, 255, 255);
@@ -459,10 +472,10 @@ footer {
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
-  padding: 55px 50px;
+  padding: 45px 50px;
 }
 
-.footer-distributed .footer-left,
+
 .footer-distributed .footer-center,
 .footer-distributed .footer-right {
   display: inline-block;
@@ -472,7 +485,14 @@ footer {
 /* Footer left */
 
 .footer-distributed .footer-left {
-  width: 40%;
+  width: 36%;
+}
+.footer-left{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
 }
 
 /* The company logo */
@@ -508,6 +528,13 @@ footer {
   font-weight: normal;
   margin: 0;
 }
+.footer-company-name a {
+  text-decoration: none;
+  color:#e50e1d ;
+}
+.footer-links  a:hover{
+color:#e50e1d ;
+}
 
 /* Footer Center */
 
@@ -516,8 +543,8 @@ footer {
 }
 
 .footer-distributed .footer-center i {
-  background-color: #33383b;
-  color: #ffffff;
+  background-color: #e50e1d;
+  color: #0c0c0c;
   font-size: 25px;
   width: 38px;
   height: 38px;
@@ -548,7 +575,7 @@ footer {
 }
 
 .footer-distributed .footer-center p a {
-  color: #5383d3;
+  color: #e50e1d;
   text-decoration: none;
 }
 
@@ -595,23 +622,24 @@ footer {
   margin-bottom: 5px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 880px) {
-  .footer-distributed {
-    font: bold 14px sans-serif;
-  }
-
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  .footer-distributed .footer-center i {
-    margin-left: 0;
-  }
+@media only screen and (max-width: 899px) {
+    .root{
+      display: none;
+    }
+    .back_to_top{
+      display: none;
+    }
+.mobile{
+  display: block;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: red;
+  text-transform: capitalize;
+}
 }

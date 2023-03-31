@@ -6,10 +6,20 @@
  <meta name="viewport", content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="css\form.css">
  <link rel="stylesheet" href="css\universal.css">
+ <link rel="stylesheet" href="css\loader.css">
  <title>Register!!</title>
 
 </head>
 <body>
+  <div class="full_loader">
+    <div class="main-load">
+    <h5>Registering in Battleground</h5>
+        <div class="linear-loader">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
 <div class="bg" id="main_bgmove">
 
 </div>
@@ -21,9 +31,9 @@
 
 
 
-
-    <script src="p5.min.js"></script>
-    <script src="vanta.trunk.min.js"></script>
+<script src="scripts\loader.js"></script>
+    <script src="scripts\p5.min.js"></script>
+    <script src="scripts\vanta.trunk.min.js"></script>
     <script>
     VANTA.TRUNK({
       el: "#main_bgmove",

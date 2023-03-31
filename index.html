@@ -6,6 +6,8 @@
     <meta name="viewport" , content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css\style.css" />
     <link rel="stylesheet" href="css\universal.css" />
+    <link rel="stylesheet" href="css\loader.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -15,11 +17,33 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     <title>Champions.gg</title>
   </head>
   <body>
+    <div class="mobile">
+      <h1>the website is under consturction on mobile</h1>
+      <h1>to use/experience the website use a pc</h1>
+      <div class="timer"><p id="demo"></p></div>
+      <h1>coming soon</h1>
+    </div>
+    <div class="full_loader">
+      <div class="main-load">
+        <h5>Loading Battleground</h5>
+        <div class="linear-loader">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <a href="#home">
+    <div class="back_to_top">
+      <i class="fa-solid fa-caret-up"></i>
+    </div></a>
     <div class="root">
       <section id="home" class="main">
         <video
@@ -45,21 +69,21 @@
           <div class="menu">
             <ul>
               <li>
-                <a href="#home" onclick="bleep.play()"> About Us </a>
+                <a href="#about" onclick="bleep.play()"> About Us </a>
               </li>
               <li>
-                <a href="#pricing" onclick="bleep.play()"> Standings </a>
+                <a href="#ranking" onclick="bleep.play()"> Rankings </a>
               </li>
               <li>
-                <a href="#blog" onclick="bleep.play()"> Schedule </a>
+                <a href="#" onclick="bleep.play()"> Schedule </a>
               </li>
               <li>
-                <a href="#docs" onclick="bleep.play()"> Rulebook </a>
+                <a href="#" onclick="bleep.play()"> Rulebook </a>
               </li>
             </ul>
             <ul>
               <li>
-                <a href="#signup"
+                <a href="form.html"
                   ><button id="register" onclick="bleep.play()">
                     <div id="translate"></div>
                     Register now
@@ -67,8 +91,10 @@
                 >
               </li>
               <li>
-                <a href="#login"
-                  ><button id="price" onclick="bleep.play()">Info/faQ</button></a
+                <a href="#info"
+                  ><button id="price" onclick="bleep.play()">
+                    Info/faQ
+                  </button></a
                 >
               </li>
             </ul>
@@ -92,11 +118,7 @@
             prove that you have what it takes to outlast the competition <br />
             and emerge as the <span id="red_text">last survivor.</span> <br />
           </h3>
-          <a href="form.html"
-            ><button id="get" onmouseover="change()" onmouseleave="rever()">
-              !! Register Now !!
-            </button></a
-          >
+          <a href="form.html"><button id="get">!! Register Now !!</button></a>
         </div>
         <div class="music">
           <button id="play" onclick="feel()">
@@ -151,206 +173,253 @@
         <div class="ranks">
           <table class="table">
             <thead>
-            <tr>
-            <th>Sr no.</th>
-            <th>Name</th>
-            <th>Id</th>
-            <th>Matches</th>
-            <th>Kd</th>
-            </tr>
+              <tr>
+                <th>Sr no.</th>
+                <th>Name</th>
+                <th>Id</th>
+                <th>Matches</th>
+                <th>Kd</th>
+              </tr>
             </thead>
             <tbody>
-            <tr>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            </tr>
-            <tr class="d_shade">
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            </tr>
-            <tr>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            </tr>
-            <tr class="d_shade">
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            </tr>
-            <tr>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            </tr>
-            <tr class="d_shade">
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            </tr>
-            <tr>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            </tr>
-            <tr class="d_shade">
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            </tr>
-            <tr>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            </tr>
-            <tr class="d_shade">
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            </tr>
-            <tr>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            </tr>
-            <tr class="d_shade">
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            <td>na</td>
-            </tr>
+              <tr>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+              </tr>
+              <tr class="d_shade">
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+              </tr>
+              <tr>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+              </tr>
+              <tr class="d_shade">
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+              </tr>
+              <tr>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+              </tr>
+              <tr class="d_shade">
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+              </tr>
+              <tr>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+              </tr>
+              <tr class="d_shade">
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+              </tr>
+              <tr>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+              </tr>
+              <tr class="d_shade">
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+              </tr>
+              <tr>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+              </tr>
+              <tr class="d_shade">
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+                <td>na</td>
+              </tr>
             </tbody>
-            </table>
+          </table>
         </div>
         <div class="r_head">
-          <h1 id="rankh1">
-            Rankings
-          </h1>
+          <h1 id="rankh1">Rankings</h1>
         </div>
       </section>
       <section class="end">
         <div class="socials">
           <div class="icons">
             <div id="insta">
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href="">
+                <button><i class="fa-brands fa-instagram"></i></button
+              ></a>
             </div>
             <div id="fb">
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href="">
+                <button><i class="fa-brands fa-facebook"></i></button
+              ></a>
             </div>
             <div id="yt">
-              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href="">
+                <button><i class="fa-brands fa-youtube"></i></button
+              ></a>
             </div>
             <div id="discord">
-              <a href=""><i class="fa-brands fa-discord"></i></a>
+              <a href="">
+                <button><i class="fa-brands fa-discord"></i></button
+              ></a>
             </div>
             <div id="whatsapp">
-              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="">
+                <button><i class="fa-brands fa-whatsapp"></i></button
+              ></a>
             </div>
             <div id="telegram">
-              <a href=""><i class="fa-brands fa-telegram"></i></a>
+              <a href="">
+                <button><i class="fa-brands fa-telegram"></i></button
+              ></a>
             </div>
           </div>
-
         </div>
-  
-        <footer class="footer-distributed footer">
 
+        <footer class="footer-distributed footer">
           <div class="footer-left">
-    
             <a href="#" class="footer-logo">
-              <img src="assets\main.png" alt="My Awesome Website" height="40px" />
+              <img
+                src="assets\main.png"
+                alt="My Awesome Website"
+                height="40px"
+              />
             </a>
-    
+
             <p class="footer-links">
-              <a href="#">Home</a> ·
-              <a href="#">About</a> ·
-              <a href="#">info</a> ·
-              <a href="#">About</a> ·
-              <a href="#">Faq</a> ·
+              <a href="#">Home</a> |&nbsp; <a href="#">About</a> |&nbsp;
+              <a href="#">info</a> |&nbsp; <a href="#">About</a> |&nbsp;
+              <a href="#">Faq</a> |&nbsp;
               <a href="#">Contact</a>
             </p>
-    
-            <p class="footer-company-name">survivor series &copy; 2023</p>
+            <div>
+              <p class="footer-company-name">survivor series &copy; 2023</p>
+              <p class="footer-company-name">
+                Made by <a href="#">V.R</a> &copy; 2003
+              </p>
+            </div>
           </div>
-    
+
           <div class="footer-center">
-    
             <div>
               <i class="fa fa-map-marker"></i>
-              <p><span>Somewhere in patna</span> Bihar , INDIAN</p>
+              <p><span>Somewhere in BIhar</span>INDIA</p>
             </div>
-    
-            <div>
-              <i class="fa fa-phone"></i>
-              <p>pta nahi</p>
-            </div>
-    
+
             <div>
               <i class="fa fa-envelope"></i>
               <p><a href="mailto:support@company.com">survivor@bgmi.com</a></p>
             </div>
-    
           </div>
-    
+
           <div class="footer-right">
-    
             <p class="footer-company-about">
               <span>About this guy</span> Blah Blah..Blah blah bl;ah blah
             </p>
-    
-    
-    
           </div>
-    
         </footer>
-    
       </section>
     </div>
 
+
+
+
+
+
+
+
+
+
+
+<script src="scripts\smooth.js"></script>
+    <script src="scripts\loader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="scripts\index.js"></script>
     <script>
-        function nows() {
-
-          Swal.fire({
-  title: 'Work in Progress[beta]',
-  showClass: {
-    popup: 'animate__animated animate__fadeInDown'
-  },
-  hideClass: {
-    popup: 'animate__animated animate__fadeOutUp'
-  }
-})
-       ;
+      function nows() {
+        Swal.fire({
+          title: "Work in Progress",
+          showClass: {
+            popup: "animate__animated animate__fadeInDown",
+          },
+          hideClass: {
+            popup: "animate__animated animate__fadeOutUp",
+          },
+        });
       }
-      window.onload = function() {
+      window.onload = function () {
         nows();
       };
+
+      window.addEventListener("load", function () {
+        var letsgo = new Audio("assets/Lets go.mp3");
+        letsgo.play();
+      });
     </script>
+    <script>
+    
+      // Set the date we're counting down to
+      var countDownDate = new Date("apr 17, 2023 15:37:25").getTime();
+      
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+      
+        // Get today's date and time
+        var now = new Date().getTime();
+          
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+          
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+          
+        // If the count down is over, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+      
+      </script>
   </body>
 </html>

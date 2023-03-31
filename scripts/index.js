@@ -1,3 +1,13 @@
+// Scroll to specific values
+// scrollTo is the same
+window.scroll({
+  top: 2500, 
+  left: 0, 
+  behavior: 'smooth'
+});
+
+
+
 let playbtn = document.querySelector("#play")
 let pausebtn = document.querySelector("#pause")
 
@@ -24,9 +34,9 @@ function nofeel(){
   playbtn.style.display="block";
 
 }
-function change() {
- home.style.backgroundColor="#e50e1d36"
-}
-function rever() {
-  home.style.backgroundColor="#0000008e"
-}
+// let lets_go = new Audio();
+//   lets_go.src = 'assets/Lets go.mp3';
+
+// function letsGo(){
+//   lets_go.play()
+// }
